@@ -1,0 +1,113 @@
+{
+  "scan_date": "2025-10-24T19:05:09.954509Z",
+  "summary": {
+    "endpoints": 6,
+    "avg_score": 71.66666666666667
+  },
+  "results": [
+    {
+      "endpoint": "https://httpbin.org/get",
+      "status": 200,
+      "header_findings": [
+        "Permissive CORS",
+        "Missing header: x-frame-options",
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security",
+        "Missing header: x-content-type-options"
+      ],
+      "auth": {
+        "endpoint": "https://httpbin.org/get",
+        "no_auth_status": 200,
+        "invalid_token_status": 200
+      },
+      "risk_score": 100,
+      "severity": "Critical"
+    },
+    {
+      "endpoint": "https://jsonplaceholder.typicode.com/users",
+      "status": 200,
+      "header_findings": [
+        "No CORS header",
+        "Missing header: x-frame-options",
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security"
+      ],
+      "auth": {
+        "endpoint": "https://jsonplaceholder.typicode.com/users",
+        "no_auth_status": 200,
+        "invalid_token_status": 200
+      },
+      "risk_score": 100,
+      "severity": "Critical"
+    },
+    {
+      "endpoint": "https://httpbingo.org/anything",
+      "status": 200,
+      "header_findings": [
+        "Permissive CORS",
+        "Missing header: x-frame-options",
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security",
+        "Missing header: x-content-type-options"
+      ],
+      "auth": {
+        "endpoint": "https://httpbingo.org/anything",
+        "no_auth_status": 200,
+        "invalid_token_status": 200
+      },
+      "risk_score": 100,
+      "severity": "Critical"
+    },
+    {
+      "endpoint": "https://reqres.in/api/users?page=2",
+      "status": 401,
+      "header_findings": [
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security"
+      ],
+      "auth": {
+        "endpoint": "https://reqres.in/api/users?page=2",
+        "no_auth_status": 401,
+        "invalid_token_status": 401
+      },
+      "risk_score": 30,
+      "severity": "Low"
+    },
+    {
+      "endpoint": "https://example.com/api/v1/admin",
+      "status": 404,
+      "header_findings": [
+        "No CORS header",
+        "Missing header: x-frame-options",
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security",
+        "Missing header: x-content-type-options"
+      ],
+      "auth": {
+        "endpoint": "https://example.com/api/v1/admin",
+        "no_auth_status": 404,
+        "invalid_token_status": 404
+      },
+      "risk_score": 30,
+      "severity": "Low"
+    },
+    {
+      "endpoint": "https://httpbin.org/status/401",
+      "status": 0,
+      "header_findings": [
+        "No CORS header",
+        "Missing header: x-frame-options",
+        "Missing header: content-security-policy",
+        "Missing header: strict-transport-security",
+        "Missing header: x-content-type-options"
+      ],
+      "auth": {
+        "endpoint": "https://httpbin.org/status/401",
+        "no_auth_status": null,
+        "invalid_token_status": 503
+      },
+      "risk_score": 70,
+      "severity": "High"
+    }
+  ]
+}

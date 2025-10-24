@@ -1,0 +1,7 @@
+name,base_url,endpoint,method,auth_type,notes
+critical-public,https://httpbin.org,/get,GET,none,Publicly exposed endpoint (Critical)
+critical-data,https://jsonplaceholder.typicode.com,/users,GET,none,Public data exposure (Critical)
+medium-cors,https://httpbingo.org,/anything,GET,none,Reflects origin headers (Medium)
+medium-headers,https://reqres.in,/api/users?page=2,GET,none,Partial headers present (Medium)
+low-placeholder,https://example.com,/api/v1/admin,GET,none,Unreachable (Low)
+low-auth,https://httpbin.org,/status/401,GET,none,Protected or unauthorized endpoint (Low)
